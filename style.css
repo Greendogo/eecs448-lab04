@@ -12,3 +12,18 @@ form {
   margin-right: 40%;
   text-align: center;
 }
+
+table {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
