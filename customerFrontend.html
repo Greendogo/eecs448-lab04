@@ -1,10 +1,10 @@
 <html>
   <head>
-    <title>Multiplication Table</title>
+    <title>Shopping Frontend</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <form name="shopping" onsubmit="validate()" method="post" action="customerBackend.php">
+    <form id="shoppingForm" method="post" action="customerBackend.php">
       <div><br>
         Username: <input type="text" name="username" id="username" value=""><br><br>
         Password: <input type="text" name="password" id="password" value="">
@@ -27,9 +27,9 @@
         <input type="radio" name="shipping" value="2">$50.00 over night<br>
         <input type="radio" name="shipping" value="3">$5.00 three day<br>
       </div>
-        <input type="submit">
 
-        <button onclick="resetForm()">Reset</button>
+        <input type="button" onclick="validate()" value="Submit">
+        <input type="button" onclick="resetForm()" value="Reset">
     </form>
 
     <script src="formChecker.js"></script>

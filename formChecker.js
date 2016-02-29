@@ -1,30 +1,31 @@
 function validate() {
-  var username = document.getElementsByName("username").value;
-  var password = document.getElementsByName("password").value;
-  var sofa = document.getElementsByName("sofa").value;
-  var tomato = document.getElementsByName("tomato").value;
-  var pencil = document.getElementsByName("pencil").value;
+  var username = document.getElementById("username").value;
+  alert(username);
+  var password = document.getElementById("password").value;
+  var sofa = document.getElementById("sofa").value;
+  var tomato = document.getElementById("tomato").value;
+  var pencil = document.getElementById("pencil").value;
   var shipping = document.getElementsByName("shipping").value;
 
-  if(validateEmail(username)) {
+  if(!validEmail(username)) {
     alert("Please enter a valid email!");
+    return false;
   }
-  else if (sofa < 0 && tomato < 0 && pencil < 0) {
-    alert("Please enter values 0 or above!");
-  }
-  else {
-    document.getElementById("shopping").submit();
+  else if (sofa == '' || tomato == '' || pencil == '') {
+    if (sofa < 0 || tomato < 0 || pencil < 0) {
+      alert("Please enter values 0 or above!");
+      return false;
+    }
+    else {
+      document.getElementById("shoppingForm").submit();
+      return true;
+    }
   }
 }
 
 // Got the regular expression for validating email addresses from here:
 // http://www.w3resource.com/javascript/form/email-validation.php
 
-
-function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-}
 
 function validEmail(text)
 {
