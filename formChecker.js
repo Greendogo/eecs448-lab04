@@ -1,25 +1,29 @@
 function validate() {
   var username = document.getElementById("username").value;
-  alert(username);
   var password = document.getElementById("password").value;
   var sofa = document.getElementById("sofa").value;
   var tomato = document.getElementById("tomato").value;
   var pencil = document.getElementById("pencil").value;
   var shipping = document.getElementsByName("shipping").value;
-
   if(!validEmail(username)) {
     alert("Please enter a valid email!");
     return false;
   }
   else if (sofa == '' || tomato == '' || pencil == '') {
-    if (sofa < 0 || tomato < 0 || pencil < 0) {
-      alert("Please enter values 0 or above!");
-      return false;
-    }
-    else {
-      document.getElementById("shoppingForm").submit();
-      return true;
-    }
+    alert("Please enter values 0 or above!");
+  }
+  else if (sofa < 0 || tomato < 0 || pencil < 0) {
+    alert("Please enter values 0 or above!");
+    return false;
+  }
+  else if (password == '') {
+    alert("Please enter a password!");
+    return false;
+  }
+  else {
+    alert("Good input!");
+    document.getElementById("shoppingForm").submit();
+    return true;
   }
 }
 
@@ -39,10 +43,10 @@ function validEmail(text)
 }
 
 function resetForm() {
-  document.getElementsByName("username").value = "";
-  document.getElementsByName("password").value = "";
-  document.getElementsByName("sofa").value = 0;
-  document.getElementsByName("tomato").value = 0;
-  document.getElementsByName("pencil").value = 0;
+  document.getElementById("username").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("sofa").value = 0;
+  document.getElementById("tomato").value = 0;
+  document.getElementById("pencil").value = 0;
   document.getElementsByName("shipping").value = 1;
 }
