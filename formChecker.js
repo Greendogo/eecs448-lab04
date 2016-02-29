@@ -21,7 +21,6 @@ function validate() {
     return false;
   }
   else {
-    alert("Good input!");
     document.getElementById("shoppingForm").submit();
     return true;
   }
