@@ -1,0 +1,22 @@
+form {
+  color: white;
+  margin-left: 33%;
+  margin-right: 33%;
+  background-color: #1a1a1a;
+  border-color: white;
+  border-style: inset;
+  border-width: 2px;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: left;
+}
+
+div {
+  background-color: black;
+  border-style: inset;
+  border-width: 2px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}

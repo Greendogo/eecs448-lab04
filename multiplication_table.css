@@ -1,0 +1,14 @@
+td:hover {
+    background-color: #ddd;
+    cursor:default;
+}
+
+.headers {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.headers:hover {
+  background-color: #4CAFF0;
+  color: white;
+}

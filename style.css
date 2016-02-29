@@ -1,0 +1,14 @@
+div {
+  border-style: inset;
+  border-width: 2px;
+  margin: 5%;
+  text-align: center;
+}
+
+form {
+  border-style: inset;
+  border-width: 2px;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+}

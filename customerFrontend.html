@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form name="shopping" onsubmit="validate()" method="post" action="customerBackend.php">
+      <div><br>
+        Username: <input type="text" name="username" id="username" value=""><br><br>
+        Password: <input type="text" name="password" id="password" value="">
+        <br>
+      </div>
+      <div>
+        Sofa<br>
+        Price: $3.25<br>
+        Quantity: <input type="text" name="sofa" id="sofa" value="0"><br><br>
+        Tomato<br>
+        Price: $40<br>
+        Quantity: <input type="text" name="tomato" id="tomato" value="0"><br><br>
+        Pencil<br>
+        Price: $9,000<br>
+        Quantity: <input type="text" name="pencil" id="pencil" value="0"><br><br>
+      </div>
+      <div>
+        Shipping<br>
+        <input type="radio" name="shipping" value="1" checked>Free 7 day<br>
+        <input type="radio" name="shipping" value="2">$50.00 over night<br>
+        <input type="radio" name="shipping" value="3">$5.00 three day<br>
+      </div>
+        <input type="submit">
+
+        <button onclick="resetForm()">Reset</button>
+    </form>
+
+    <script src="formChecker.js"></script>
+  </body>
+</html>
